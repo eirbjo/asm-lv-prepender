@@ -30,8 +30,6 @@ public class LocalVariablesDemo {
 
     @Benchmark
     @Warmup(iterations = 3)
-    @Fork(1)
-    @Measurement(iterations = 1)
     public void localVariablesPrepender(RunState runState) {
         ClassReader cr = new ClassReader(runState.bytes);
 
@@ -45,8 +43,6 @@ public class LocalVariablesDemo {
 
     @Benchmark
     @Warmup(iterations = 3)
-    @Measurement(iterations = 1)
-    @Fork(1)
     public void localVariablesSorter(RunState runState) {
         ClassReader cr = new ClassReader(runState.bytes);
 
