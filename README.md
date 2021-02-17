@@ -2,7 +2,7 @@
 
 ASM's LocalVariableSorter currently expects expanded frames.
 
-This Maven project contains a JMH benchmark demonstrating the performance difference win
+This Maven project contains a JMH benchmark demonstrating the performance win
 of replacing LocalVariableSorter with a custom class LocalVariablesPrepender.
 
 LocalVariablesPrepender only supports inserting local variables at the start of methods. In contrast to 
